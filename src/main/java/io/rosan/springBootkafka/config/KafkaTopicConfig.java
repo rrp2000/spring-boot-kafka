@@ -13,4 +13,9 @@ public class KafkaTopicConfig {
                 .build();
     }
 
+    @Bean
+    public NewTopic greetingJsonTopic() {
+        return TopicBuilder.name("greeting-topic-json")
+                .build();
+    }
 }
